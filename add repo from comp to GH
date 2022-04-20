@@ -1,3 +1,9 @@
 library(usethis)
 use_git() 
 use_github() #adds repo to this project
+
+#reset to GH version
+git stash
+git checkout master
+git reset --hard origin/master
+git push --force origin master
